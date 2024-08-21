@@ -8,6 +8,7 @@ const Port = process.env.PORT || 8080;
 const app = express();
 var corsOptions = {
   origin: "http://localhost:3000",
+  origin: "https://buy-cars-teal.vercel.app",
 };
 
 app.use("/temp", express.static(path.join(__dirname, "./temp")));
